@@ -1,8 +1,9 @@
 import json
 import logging
+
 from xblock.core import XBlock
 from xblock.fields import Scope, String, Dict, List
-from .sub_api import SubmittingXBlockMixin, my_api
+from .sub_api import SubmittingXBlockMixin
 
 PAGE_SIZE = 15
 
@@ -107,10 +108,6 @@ class ExportDataBlock(XBlock, SubmittingXBlockMixin):
         # Make sure we nail down our state before sending off an asynchronous task.
         self.save()
         log.info("------------ in start_export - starting async task ---------------")
-        if my_api:
-            log.info("------------ in start_export - my_api found ---------------")
-        else:
-            log.info("------------ in start_export - my_api not found ---------------")
 
         from .tasks import export_data as export_data_task  # Import here since this is edX LMS specific
         async_result = export_data_task.delay(

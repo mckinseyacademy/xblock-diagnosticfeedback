@@ -25,12 +25,6 @@ import logging
 
 log = logging.getLogger(__name__)
 
-try:
-    from submissions import api as my_api
-except ImportError:
-    log.info("can not import my_api")
-    my_api = None  # We are probably in the workbench. Don't use the submissions API
-
 
 class SubmittingXBlockMixin(object):
     """ Simplifies use of the submissions API by an XBlock """
@@ -38,7 +32,6 @@ class SubmittingXBlockMixin(object):
     @property
     def student_item_key(self):
         """ Get the student_item_dict required for the submissions API """
-        assert my_api is not None
         location = self.location.replace(branch=None, version=None)  # Standardize the key in case it isn't already
         return dict(
             student_id=self.runtime.anonymous_student_id,
