@@ -13,3 +13,4 @@ class DiagnosticFeedbackConfig(AppConfig):
 
     def ready(self):
         from .quiz import QuizBlock
+        print("\n\n#### HERE Diagnostic #### \n\n")

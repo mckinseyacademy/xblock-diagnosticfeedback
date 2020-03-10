@@ -10,7 +10,6 @@ from .mixins import ResourceMixin, XBlockWithTranslationServiceMixin
 from .quiz_result import QuizResultMixin
 from .helpers import MainHelper
 from .validators import Validator
-from .sub_api import my_api
 from .data_tool import ExportDataBlock
 from datetime import datetime
 
@@ -358,6 +357,8 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         :param suffix:
         :return: response dict
         """
+        # Import is placed here to avoid model import at project startup.
+        from submissions import api as my_api
 
         student_result = ""
         response_message = ""

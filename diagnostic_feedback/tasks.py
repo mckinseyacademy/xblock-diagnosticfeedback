@@ -3,11 +3,12 @@ Celery task for CSV student answer export.
 """
 import time
 import json
+
 from celery.task import task
 from celery.utils.log import get_task_logger
+from submissions import api as my_api
 from opaque_keys.edx.keys import CourseKey
 from xmodule.modulestore.django import modulestore
-from .sub_api import my_api
 
 logger = get_task_logger(__name__)
 
