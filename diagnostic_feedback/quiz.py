@@ -358,7 +358,11 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         :return: response dict
         """
         # Import is placed here to avoid model import at project startup.
-        from submissions import api as my_api
+        try:
+            from submissions import api as my_api
+        except ImportError:
+            log.info("can not import my_api")
+            my_api = None
 
         student_result = ""
         response_message = ""
