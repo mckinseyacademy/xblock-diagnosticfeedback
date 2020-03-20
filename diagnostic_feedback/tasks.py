@@ -6,7 +6,7 @@ import json
 
 from celery.task import task
 from celery.utils.log import get_task_logger
-from submissions import api as my_api
+from submissions import api as submissions_api
 from opaque_keys.edx.keys import CourseKey
 from xmodule.modulestore.django import modulestore
 
@@ -108,4 +108,4 @@ def _get_submissions(course_key_str, block_type, block_id):
     # Load the actual student submissions for `question`.
     # Note this requires one giant query that retrieves all student submissions for `question` at once.
     logger.debug('in _get_submissions: ')
-    return my_api.get_all_submissions(course_key_str, block_id, block_type)
+    return submissions_api.get_all_submissions(course_key_str, block_id, block_type)

@@ -359,10 +359,10 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         """
         # Import is placed here to avoid model import at project startup.
         try:
-            from submissions import api as my_api
+            from submissions import api as submissions_api
         except ImportError:
-            log.info("can not import my_api")
-            my_api = None
+            log.info("Cannot import submissions_api")
+            submissions_api = None
 
         student_result = ""
         response_message = ""
@@ -389,14 +389,14 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
                         })
                         self.completed = True
 
-                    if my_api:
+                    if submissions_api:
                         log.info("have sub_api instance")
                         # Also send to the submissions API:
                         item_key = self.student_item_key
                         item_key['item_id'] = self.get_block_id()
                         submission_data = self.create_submission_data()
                         submission_data['final_result'] = student_result
-                        my_api.create_submission(item_key, json.dumps(submission_data))
+                        submissions_api.create_submission(item_key, json.dumps(submission_data))
 
                 response_message = self._("Your response is saved")
         except Exception as ex:
