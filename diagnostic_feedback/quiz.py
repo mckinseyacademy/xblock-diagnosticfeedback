@@ -10,7 +10,6 @@ from .mixins import ResourceMixin, XBlockWithTranslationServiceMixin
 from .quiz_result import QuizResultMixin
 from .helpers import MainHelper
 from .validators import Validator
-from .sub_api import my_api
 from .data_tool import ExportDataBlock
 from datetime import datetime
 
@@ -358,6 +357,12 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         :param suffix:
         :return: response dict
         """
+        # Import is placed here to avoid model import at project startup.
+        try:
+            from submissions import api as submissions_api
+        except ImportError:
+            log.info("Cannot import submissions_api")
+            submissions_api = None
 
         student_result = ""
         response_message = ""
@@ -384,14 +389,14 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
                         })
                         self.completed = True
 
-                    if my_api:
+                    if submissions_api:
                         log.info("have sub_api instance")
                         # Also send to the submissions API:
                         item_key = self.student_item_key
                         item_key['item_id'] = self.get_block_id()
                         submission_data = self.create_submission_data()
                         submission_data['final_result'] = student_result
-                        my_api.create_submission(item_key, json.dumps(submission_data))
+                        submissions_api.create_submission(item_key, json.dumps(submission_data))
 
                 response_message = self._("Your response is saved")
         except Exception as ex:
