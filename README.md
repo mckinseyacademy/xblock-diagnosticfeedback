@@ -155,7 +155,11 @@ For information about working with translations, see the
 [Internationalization Support](http://edx.readthedocs.io/projects/xblock-tutorial/en/latest/edx_platform/edx_lms.html#internationalization-support)
 section of the [Open edX XBlock Tutorial](https://xblock-tutorial.readthedocs.io/en/latest/).
 
-[Prepare your virtualenv](#workbench-installation-and-settings)
+Prepare your virtualenv and install the development requirements into the Python virtual environment by running the following command from the root folder:
+
+```bash
+$ make dev-requirements
+```
 
 To extract strings for translations:
 
