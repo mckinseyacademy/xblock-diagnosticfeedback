@@ -2,7 +2,7 @@
 -e git://github.com/edx/xblock-sdk.git@v0.1.6#egg=xblock-sdk==v0.1.6
 -e git+https://github.com/edx/xblock-utils.git@b4f9b51146c7fafa12f41d54af752b8f1516dffd#egg=xblock-utils
 
-Django==1.11.25
+Django==1.11.29
 xblock==1.2.9
 
 # Latest version(1.0.4) of django-appconf do not support python 2
