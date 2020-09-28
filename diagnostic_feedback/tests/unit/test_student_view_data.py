@@ -68,7 +68,7 @@ class StudentViewDataTest(BaseTest):
             self.diagnostic_feedback_block.handle(
                 'student_view_user_state',
                 self.make_request('', method='GET')
-            ).body
+            ).body.decode('utf-8')
         )
         expected_diagnostic_feedback_response = {
             u'student_choices': {},

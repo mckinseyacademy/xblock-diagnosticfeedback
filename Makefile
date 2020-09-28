@@ -12,7 +12,7 @@ quality: ## check coding style with pycodestyle and pylint
 
 test: ## run tests in the current virtualenv
 	mkdir -p var  # for var/workbench.log
-	python run_tests.py --with-coverage --cover-package=diagnostic_feedback
+	python run_tests.py
 
 requirements: ## install development environment requirements
 	pip install -r requirements.txt --exists-action w

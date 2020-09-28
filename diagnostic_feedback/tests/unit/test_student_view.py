@@ -65,7 +65,7 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
                 else:
                     data['question_id'] = question_data["id"]
                 json_data = json.dumps(data)
-                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body)
+                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body.decode('utf-8'))
                 if _type == 'missing_choice':
                     assert_equals(res['success'], False)
                 elif _type == 'missing_id':
@@ -99,7 +99,7 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
                 else:
                     data['question_id'] = question_data["id"]
                 json_data = json.dumps(data)
-                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body)
+                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body.decode('utf-8'))
                 if _type == 'missing_choice':
                     assert_equals(res['success'], False)
                 elif _type == 'missing_id':
