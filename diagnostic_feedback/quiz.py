@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 import json
 import copy
@@ -12,6 +13,7 @@ from .helpers import MainHelper
 from .validators import Validator
 from .data_tool import ExportDataBlock
 from datetime import datetime
+import six
 
 log = logging.getLogger(__name__)
 loader = ResourceLoader(__name__)
@@ -171,7 +173,7 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         """
         usage_id = self.scope_ids.usage_id
         # Try accessing block ID. If usage_id does not have it, return usage_id itself
-        return unicode(getattr(usage_id, 'block_id', usage_id))
+        return six.text_type(getattr(usage_id, 'block_id', usage_id))
 
     def get_question(self, question_id):
         """

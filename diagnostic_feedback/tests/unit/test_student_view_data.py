@@ -1,8 +1,9 @@
+from __future__ import absolute_import
 import json
 
 from xblock.field_data import DictFieldData
 
-from base_test import BaseTest
+from .base_test import BaseTest
 from diagnostic_feedback.quiz import QuizBlock
 from ..utils import MockRuntime
 

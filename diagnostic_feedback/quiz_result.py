@@ -1,7 +1,9 @@
+from __future__ import absolute_import
 import itertools
 import copy
 import logging
 from collections import defaultdict
+import six
 
 log = logging.getLogger(__name__)
 
@@ -35,13 +37,13 @@ class QuizResultMixin(object):
             else:
                 outcomes[self.student_choices[choice]] = 1
 
-        keys = outcomes.keys()
+        keys = list(outcomes.keys())
         calculated_results = copy.deepcopy(self.results)
         for d in calculated_results:
             if d['id'] in outcomes:
                 d.update({'count': outcomes[d['id']]})
 
-        filtered_results = filter(lambda d: d['id'] in keys, calculated_results)
+        filtered_results = [d for d in calculated_results if d['id'] in keys]
         sorted_results = sorted(filtered_results, key=lambda d: d['group'])
         groups = itertools.groupby(sorted_results, lambda item: item["group"])
 
@@ -73,7 +75,7 @@ class QuizResultMixin(object):
 
         question_groups = {q['id']: q['group'] for q in self.questions}
         outcomes = defaultdict(int)
-        for choice, value in self.student_choices.iteritems():
+        for choice, value in six.iteritems(self.student_choices):
             outcomes[question_groups[choice]] += float(value)
 
         for result in self.results:

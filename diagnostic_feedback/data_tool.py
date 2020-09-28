@@ -1,9 +1,11 @@
+from __future__ import absolute_import
 import json
 import logging
 
 from xblock.core import XBlock
 from xblock.fields import Scope, String, Dict, List
 from .sub_api import SubmittingXBlockMixin
+import six
 
 PAGE_SIZE = 15
 
@@ -54,7 +56,7 @@ class ExportDataBlock(XBlock, SubmittingXBlockMixin):
                 self.last_export_result = {'error': u'Unexpected result: {}'.format(repr(task_result.result))}
                 self.display_data = None
         else:
-            self.last_export_result = {'error': unicode(task_result.result)}
+            self.last_export_result = {'error': six.text_type(task_result.result)}
             self.display_data = None
 
     @property
@@ -97,7 +99,7 @@ class ExportDataBlock(XBlock, SubmittingXBlockMixin):
         """ Start a new asynchronous export """
         log.info("------------ in start_export ---------------")
         root_block_id = self.scope_ids.usage_id
-        root_block_id = unicode(getattr(root_block_id, 'block_id', root_block_id))
+        root_block_id = six.text_type(getattr(root_block_id, 'block_id', root_block_id))
         #
 
         if not self.user_is_staff():
@@ -112,7 +114,7 @@ class ExportDataBlock(XBlock, SubmittingXBlockMixin):
         from .tasks import export_data as export_data_task  # Import here since this is edX LMS specific
         async_result = export_data_task.delay(
             # course_id not available in workbench.
-            unicode(getattr(self.runtime, 'course_id', 'course_id')),
+            six.text_type(getattr(self.runtime, 'course_id', 'course_id')),
             root_block_id
         )
         if async_result.ready():

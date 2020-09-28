@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 import json
 import os
-from base_test import BaseTest
+from .base_test import BaseTest
 from .wizard_step_mixin import WizardStepMixin
 
 from nose.tools import (assert_equals)

@@ -1,6 +1,7 @@
 """
 Celery task for CSV student answer export.
 """
+from __future__ import absolute_import
 import time
 import json
 
@@ -9,6 +10,8 @@ from celery.utils.log import get_task_logger
 from submissions import api as submissions_api
 from opaque_keys.edx.keys import CourseKey
 from xmodule.modulestore.django import modulestore
+import six
+from six.moves import range
 
 logger = get_task_logger(__name__)
 
@@ -27,7 +30,7 @@ def export_data(course_id, source_block_id_str):
         block = modulestore().get_items(course_key, qualifiers={'name': source_block_id_str}, depth=0)[0]
     except IndexError:
         raise ValueError("Could not find the specified Block ID.")
-    course_key_str = unicode(course_key)
+    course_key_str = six.text_type(course_key)
 
     # Define the header row of our CSV:
     rows = []

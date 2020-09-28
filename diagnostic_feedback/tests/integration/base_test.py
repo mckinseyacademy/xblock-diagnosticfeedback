@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from selenium.webdriver.support.ui import WebDriverWait
 from xblock.fields import String
 from xblockutils.base_test import SeleniumXBlockTest

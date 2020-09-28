@@ -4,10 +4,12 @@
 Run tests for the Diagnostic Feedback XBlock
 """
 
+from __future__ import absolute_import
 import os
 import sys
 
 import logging
+import six
 
 logging.disable(logging.DEBUG)
 
@@ -32,7 +34,7 @@ if __name__ == "__main__":
     from django.conf import settings
     settings.INSTALLED_APPS += ("diagnostic_feedback", )
 
-    for noisy_logger, log_level in logging_level_overrides.iteritems():
+    for noisy_logger, log_level in six.iteritems(logging_level_overrides):
         logging.getLogger(noisy_logger).setLevel(log_level)
 
     from django.core.management import execute_from_command_line
