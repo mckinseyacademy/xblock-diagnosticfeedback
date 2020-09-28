@@ -300,7 +300,7 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         try:
             from xmodule.contentstore.content import StaticContent
             base_asset_url = StaticContent.get_base_url_path_for_course_assets(course_key)
-        except:
+        except Exception:
             base_asset_url = ''
 
         return self.get_fragment(
