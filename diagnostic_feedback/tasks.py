@@ -2,16 +2,17 @@
 Celery task for CSV student answer export.
 """
 from __future__ import absolute_import
-import time
-import json
 
+import json
+import time
+
+import six
 from celery.task import task
 from celery.utils.log import get_task_logger
-from submissions import api as submissions_api
 from opaque_keys.edx.keys import CourseKey
-from xmodule.modulestore.django import modulestore
-import six
 from six.moves import range
+from submissions import api as submissions_api
+from xmodule.modulestore.django import modulestore
 
 logger = get_task_logger(__name__)
 

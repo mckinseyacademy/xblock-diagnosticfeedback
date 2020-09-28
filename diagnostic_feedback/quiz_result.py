@@ -1,8 +1,10 @@
 from __future__ import absolute_import
-import itertools
+
 import copy
+import itertools
 import logging
 from collections import defaultdict
+
 import six
 
 log = logging.getLogger(__name__)

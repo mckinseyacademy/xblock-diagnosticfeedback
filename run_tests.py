@@ -5,10 +5,11 @@ Run tests for the Diagnostic Feedback XBlock
 """
 
 from __future__ import absolute_import
+
+import logging
 import os
 import sys
 
-import logging
 import six
 
 logging.disable(logging.DEBUG)

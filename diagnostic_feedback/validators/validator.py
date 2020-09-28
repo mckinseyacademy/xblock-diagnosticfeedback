@@ -1,5 +1,7 @@
 from __future__ import absolute_import
-from . import CategoryValidator, RangeValidator, QuizValidator, QuestionValidator, StudentChoiceValidator
+
+from . import (CategoryValidator, QuestionValidator, QuizValidator,
+               RangeValidator, StudentChoiceValidator)
 
 
 class Validator(object):

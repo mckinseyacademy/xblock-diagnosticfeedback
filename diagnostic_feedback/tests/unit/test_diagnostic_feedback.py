@@ -1,10 +1,12 @@
 from __future__ import absolute_import
+
 import json
 import os
+
+from nose.tools import assert_equals
+
 from .base_test import BaseTest
 from .wizard_step_mixin import WizardStepMixin
-
-from nose.tools import (assert_equals)
 
 
 class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):

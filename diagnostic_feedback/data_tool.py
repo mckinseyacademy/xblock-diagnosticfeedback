@@ -1,11 +1,13 @@
 from __future__ import absolute_import
+
 import json
 import logging
 
-from xblock.core import XBlock
-from xblock.fields import Scope, String, Dict, List
-from .sub_api import SubmittingXBlockMixin
 import six
+from xblock.core import XBlock
+from xblock.fields import Dict, List, Scope, String
+
+from .sub_api import SubmittingXBlockMixin
 
 PAGE_SIZE = 15
 

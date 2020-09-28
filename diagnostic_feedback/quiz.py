@@ -1,19 +1,22 @@
 from __future__ import absolute_import
-import logging
-import json
+
 import copy
+import json
+import logging
+from datetime import datetime
+
+import six
 from webob import Response
 from xblock.core import XBlock
-from xblock.fields import Scope, String, List, Integer, Dict, Boolean, Float
+from xblock.fields import Boolean, Dict, Float, Integer, List, Scope, String
 from xblock.fragment import Fragment
 from xblockutils.resources import ResourceLoader
+
+from .data_tool import ExportDataBlock
+from .helpers import MainHelper
 from .mixins import ResourceMixin, XBlockWithTranslationServiceMixin
 from .quiz_result import QuizResultMixin
-from .helpers import MainHelper
 from .validators import Validator
-from .data_tool import ExportDataBlock
-from datetime import datetime
-import six
 
 log = logging.getLogger(__name__)
 loader = ResourceLoader(__name__)
