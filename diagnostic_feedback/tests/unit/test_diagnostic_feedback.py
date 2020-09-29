@@ -2,6 +2,7 @@ from __future__ import absolute_import
 
 import json
 import os
+from collections import OrderedDict
 
 from nose.tools import assert_equals
 
@@ -55,14 +56,14 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
 
     def load_step_data(self, step, quiz_type=None):
         if step == 1:
-            return json.loads(self.load_json_resource('data/step1_test_data.json'))
+            return json.loads(self.load_json_resource('data/step1_test_data.json'), object_pairs_hook=OrderedDict)
         elif step == 2:
-            return json.loads(self.load_json_resource('data/step2_test_data.json'))
+            return json.loads(self.load_json_resource('data/step2_test_data.json'), object_pairs_hook=OrderedDict)
         elif step == 3:
             if quiz_type == self._block.BUZZFEED_QUIZ_VALUE:
-                return json.loads(self.load_json_resource('data/step3_buzzfeed_test_data.json'))
+                return json.loads(self.load_json_resource('data/step3_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict)
             else:
-                return json.loads(self.load_json_resource('data/step3_diagnostic_test_data.json'))
+                return json.loads(self.load_json_resource('data/step3_diagnostic_test_data.json'), object_pairs_hook=OrderedDict)
 
     def test_wizard_step1(self):
 

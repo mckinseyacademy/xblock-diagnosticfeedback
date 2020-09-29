@@ -379,8 +379,8 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
 
                 # save student answer
                 self.student_choices[question_id] = data['student_choice']
-                if self.current_step < data['currentStep']:
-                    self.current_step = data['currentStep']
+                if (self.current_step) < int(data['currentStep']):
+                    self.current_step = int(data['currentStep'])
 
                 # calculate feedback result if user answering last question
                 if data['isLast']:
