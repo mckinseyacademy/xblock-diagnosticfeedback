@@ -42,8 +42,12 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
 
     def setUp(self):
         self._block = self.make_block()
-        self._daignostic_answer = json.loads(self.load_json_resource('data/answer_diagnostic_test_data.json'), object_pairs_hook=OrderedDict)
-        self._buzzfeed_answer = json.loads(self.load_json_resource('data/answer_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict)
+        self._daignostic_answer = json.loads(
+            self.load_json_resource('data/answer_diagnostic_test_data.json'), object_pairs_hook=OrderedDict
+        )
+        self._buzzfeed_answer = json.loads(
+            self.load_json_resource('data/answer_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict
+        )
 
     def test_diagnostic_answer(self):
 

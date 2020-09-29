@@ -61,9 +61,13 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
             return json.loads(self.load_json_resource('data/step2_test_data.json'), object_pairs_hook=OrderedDict)
         elif step == 3:
             if quiz_type == self._block.BUZZFEED_QUIZ_VALUE:
-                return json.loads(self.load_json_resource('data/step3_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict)
+                return json.loads(
+                    self.load_json_resource('data/step3_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict
+                )
             else:
-                return json.loads(self.load_json_resource('data/step3_diagnostic_test_data.json'), object_pairs_hook=OrderedDict)
+                return json.loads(
+                    self.load_json_resource('data/step3_diagnostic_test_data.json'), object_pairs_hook=OrderedDict
+                )
 
     def test_wizard_step1(self):
 
@@ -163,7 +167,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
             elif _type == 'valid':
                 assert_equals(res['success'], True)
 
-        assert_equals(len(self._block.results), 2)
+        assert_equals(len(self._block.results), 3)
 
     def test_buzzfeed_wizard_step3(self):
         assert_equals(len(self._block.results), 0)
