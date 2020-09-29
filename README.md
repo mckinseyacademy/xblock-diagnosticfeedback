@@ -65,7 +65,7 @@ Install the requirements into the Python virtual environment of your
 root folder:
 
 ```bash
-$ pip install -r requirements.txt
+$ make requirements
 ```
 
 Running tests
@@ -78,7 +78,7 @@ From the xblock-diagnostic-feedback repository root, run the tests with the
 following command:
 
 ```bash
-$ ./run_tests.py
+$ make test
 ```
 
 API for native mobile frontends
@@ -158,7 +158,7 @@ section of the [Open edX XBlock Tutorial](https://xblock-tutorial.readthedocs.io
 Prepare your virtualenv and install the development requirements into the Python virtual environment by running the following command from the root folder:
 
 ```bash
-$ make dev-requirements
+$ make requirements
 ```
 
 To extract strings for translations:
