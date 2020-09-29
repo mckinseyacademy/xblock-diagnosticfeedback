@@ -27,4 +27,4 @@ notifications:
   email: false
 
 addons:
-  firefox: "52.0.1"
+  firefox: "56.0"
