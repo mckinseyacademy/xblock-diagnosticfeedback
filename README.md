@@ -65,7 +65,7 @@ Install the requirements into the Python virtual environment of your
 root folder:
 
 ```bash
-$ make requirements
+$ pip install -r requirements.txt
 ```
 
 Running tests
