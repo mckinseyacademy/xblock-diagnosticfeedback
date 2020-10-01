@@ -174,6 +174,6 @@ $ make compile_translations
 ```
 
 If you want to add a new language:
-  1. Add language to `diagnostic_feedback/translations/config.yaml`
+  1. Add language to `diagnostic_feedback/translations/config.yaml`.
   2. Make sure all tagged strings have been extracted and get the translations.
   3. When you're done with the translations pull compile translations.
