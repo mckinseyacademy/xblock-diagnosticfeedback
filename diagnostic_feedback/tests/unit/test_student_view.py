@@ -1,9 +1,13 @@
+from __future__ import absolute_import
+
 import json
 import os
-from base_test import BaseTest
-from .wizard_step_mixin import WizardStepMixin
+from collections import OrderedDict
 
-from nose.tools import (assert_equals)
+from nose.tools import assert_equals
+
+from .base_test import BaseTest
+from .wizard_step_mixin import WizardStepMixin
 
 
 class StudentViewAjaxTest(BaseTest, WizardStepMixin):
@@ -38,8 +42,12 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
 
     def setUp(self):
         self._block = self.make_block()
-        self._daignostic_answer = json.loads(self.load_json_resource('data/answer_diagnostic_test_data.json'))
-        self._buzzfeed_answer = json.loads(self.load_json_resource('data/answer_buzzfeed_test_data.json'))
+        self._daignostic_answer = json.loads(
+            self.load_json_resource('data/answer_diagnostic_test_data.json'), object_pairs_hook=OrderedDict
+        )
+        self._buzzfeed_answer = json.loads(
+            self.load_json_resource('data/answer_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict
+        )
 
     def test_diagnostic_answer(self):
 
@@ -62,7 +70,7 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
                 else:
                     data['question_id'] = question_data["id"]
                 json_data = json.dumps(data)
-                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body)
+                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body.decode('utf-8'))
                 if _type == 'missing_choice':
                     assert_equals(res['success'], False)
                 elif _type == 'missing_id':
@@ -96,7 +104,7 @@ class StudentViewAjaxTest(BaseTest, WizardStepMixin):
                 else:
                     data['question_id'] = question_data["id"]
                 json_data = json.dumps(data)
-                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body)
+                res = json.loads(self._block.handle('save_choice', self.make_request(json_data)).body.decode('utf-8'))
                 if _type == 'missing_choice':
                     assert_equals(res['success'], False)
                 elif _type == 'missing_id':

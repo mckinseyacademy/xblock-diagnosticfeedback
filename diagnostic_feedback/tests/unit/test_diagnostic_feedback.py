@@ -1,9 +1,13 @@
+from __future__ import absolute_import
+
 import json
 import os
-from base_test import BaseTest
-from .wizard_step_mixin import WizardStepMixin
+from collections import OrderedDict
 
-from nose.tools import (assert_equals)
+from nose.tools import assert_equals
+
+from .base_test import BaseTest
+from .wizard_step_mixin import WizardStepMixin
 
 
 class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
@@ -52,20 +56,24 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
 
     def load_step_data(self, step, quiz_type=None):
         if step == 1:
-            return json.loads(self.load_json_resource('data/step1_test_data.json'))
+            return json.loads(self.load_json_resource('data/step1_test_data.json'), object_pairs_hook=OrderedDict)
         elif step == 2:
-            return json.loads(self.load_json_resource('data/step2_test_data.json'))
+            return json.loads(self.load_json_resource('data/step2_test_data.json'), object_pairs_hook=OrderedDict)
         elif step == 3:
             if quiz_type == self._block.BUZZFEED_QUIZ_VALUE:
-                return json.loads(self.load_json_resource('data/step3_buzzfeed_test_data.json'))
+                return json.loads(
+                    self.load_json_resource('data/step3_buzzfeed_test_data.json'), object_pairs_hook=OrderedDict
+                )
             else:
-                return json.loads(self.load_json_resource('data/step3_diagnostic_test_data.json'))
+                return json.loads(
+                    self.load_json_resource('data/step3_diagnostic_test_data.json'), object_pairs_hook=OrderedDict
+                )
 
     def test_wizard_step1(self):
 
         for _type, data in self._step1_data.items():
             data = json.dumps(data)
-            res = json.loads(self._block.handle('save_data', self.make_request(data)).body)
+            res = json.loads(self._block.handle('save_data', self.make_request(data)).body.decode('utf-8'))
 
             if _type == 'missing_step':
                 assert_equals(res['success'], False)
@@ -94,7 +102,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
         # test all related cases
         for _type, data in self._step2_data.get('buzzfeed_quiz_data').items():
             data = json.dumps(data)
-            res = json.loads(self._block.handle('save_data', self.make_request(data)).body)
+            res = json.loads(self._block.handle('save_data', self.make_request(data)).body.decode('utf-8'))
             if _type == 'missing_categories':
                 assert_equals(res['success'], False)
             elif _type == 'missing_id_case1':
@@ -128,7 +136,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
         # test all related cases
         for _type, data in self._step2_data.get('diagnostic_quiz_data').items():
             data = json.dumps(data)
-            res = json.loads(self._block.handle('save_data', self.make_request(data)).body)
+            res = json.loads(self._block.handle('save_data', self.make_request(data)).body.decode('utf-8'))
 
             if _type == 'missing_ranges':
                 assert_equals(res['success'], False)
@@ -159,7 +167,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
             elif _type == 'valid':
                 assert_equals(res['success'], True)
 
-        assert_equals(len(self._block.results), 2)
+        assert_equals(len(self._block.results), 3)
 
     def test_buzzfeed_wizard_step3(self):
         assert_equals(len(self._block.results), 0)
@@ -179,7 +187,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
         # test all related cases
         for _type, data in self._step3_buzzfeed_data.items():
             data = json.dumps(data)
-            res = json.loads(self._block.handle('save_data', self.make_request(data)).body)
+            res = json.loads(self._block.handle('save_data', self.make_request(data)).body.decode('utf-8'))
 
             if _type == 'missing_questions':
                 assert_equals(res['success'], False)
@@ -247,7 +255,7 @@ class DiagnosticFeedbackAjaxTest(BaseTest, WizardStepMixin):
         # test all related cases
         for _type, data in self._step3_diagnostic_data.items():
             data = json.dumps(data)
-            res = json.loads(self._block.handle('save_data', self.make_request(data)).body)
+            res = json.loads(self._block.handle('save_data', self.make_request(data)).body.decode('utf-8'))
 
             if _type == 'missing_questions':
                 assert_equals(res['success'], False)

@@ -1,6 +1,9 @@
 """Setup for diagnostic-feedback XBlock."""
 
+from __future__ import absolute_import
+
 import os
+
 from setuptools import setup
 
 
@@ -22,7 +25,7 @@ def package_data(pkg, roots):
 
 setup(
     name='xblock-diagnostic-feedback',
-    version='0.2.6',
+    version='0.3.0',
     description='XBlock - Create quiz to generate diagnostic feedback',
     packages=[
         'diagnostic_feedback',

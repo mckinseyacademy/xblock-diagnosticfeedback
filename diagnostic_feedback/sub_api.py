@@ -21,7 +21,11 @@
 Integrations between these XBlocks and the edX Submissions API
 """
 
+from __future__ import absolute_import
+
 import logging
+
+import six
 
 log = logging.getLogger(__name__)
 
@@ -35,7 +39,7 @@ class SubmittingXBlockMixin(object):
         location = self.location.replace(branch=None, version=None)  # Standardize the key in case it isn't already
         return dict(
             student_id=self.runtime.anonymous_student_id,
-            course_id=unicode(location.course_key),
-            item_id=unicode(location),
+            course_id=six.text_type(location.course_key),
+            item_id=six.text_type(location),
             item_type=self.scope_ids.block_type,
         )

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+
 import json
 
 
@@ -8,7 +10,7 @@ class WizardStepMixin(object):
             "title": "Test",
             "description": "Test description",
             "type": _type
-        }))).body)
+        }))).body.decode('utf-8'))
         return res
 
     def save_buzzfeed_step2(self):
@@ -34,7 +36,7 @@ class WizardStepMixin(object):
                     "html_body": "<p>cat 2 body</p>"
                 }
             ]
-        }))).body)
+        }))).body.decode('utf-8'))
         return res
 
     def save_diagnostic_step2(self):
@@ -60,7 +62,7 @@ class WizardStepMixin(object):
                     "html_body": "<p>Range 2 , Group 2</p>"
                 }
             ]
-        }))).body)
+        }))).body.decode('utf-8'))
         return res
 
     def save_buzzfeed_step3(self):
@@ -101,7 +103,7 @@ class WizardStepMixin(object):
                 }
             ],
 
-        }))).body)
+        }))).body.decode('utf-8'))
         return res
 
     def save_diagnostic_step3(self):
@@ -145,5 +147,5 @@ class WizardStepMixin(object):
                     "id": "3358fb1d-61ef-4fa4-86c3-b703e9249bc5"
                 }]
 
-        }))).body)
+        }))).body.decode('utf-8'))
         return res

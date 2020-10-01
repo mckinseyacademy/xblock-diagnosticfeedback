@@ -1,17 +1,22 @@
-import logging
-import json
+from __future__ import absolute_import
+
 import copy
+import json
+import logging
+from datetime import datetime
+
+import six
 from webob import Response
 from xblock.core import XBlock
-from xblock.fields import Scope, String, List, Integer, Dict, Boolean, Float
+from xblock.fields import Boolean, Dict, Float, Integer, List, Scope, String
 from xblock.fragment import Fragment
 from xblockutils.resources import ResourceLoader
+
+from .data_tool import ExportDataBlock
+from .helpers import MainHelper
 from .mixins import ResourceMixin, XBlockWithTranslationServiceMixin
 from .quiz_result import QuizResultMixin
-from .helpers import MainHelper
 from .validators import Validator
-from .data_tool import ExportDataBlock
-from datetime import datetime
 
 log = logging.getLogger(__name__)
 loader = ResourceLoader(__name__)
@@ -171,7 +176,7 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         """
         usage_id = self.scope_ids.usage_id
         # Try accessing block ID. If usage_id does not have it, return usage_id itself
-        return unicode(getattr(usage_id, 'block_id', usage_id))
+        return six.text_type(getattr(usage_id, 'block_id', usage_id))
 
     def get_question(self, question_id):
         """
@@ -295,7 +300,7 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
         try:
             from xmodule.contentstore.content import StaticContent
             base_asset_url = StaticContent.get_base_url_path_for_course_assets(course_key)
-        except:
+        except Exception:
             base_asset_url = ''
 
         return self.get_fragment(
@@ -374,8 +379,8 @@ class QuizBlock(ResourceMixin, QuizResultMixin, ExportDataBlock, XBlockWithTrans
 
                 # save student answer
                 self.student_choices[question_id] = data['student_choice']
-                if self.current_step < data['currentStep']:
-                    self.current_step = data['currentStep']
+                if (self.current_step) < int(data['currentStep']):
+                    self.current_step = int(data['currentStep'])
 
                 # calculate feedback result if user answering last question
                 if data['isLast']:

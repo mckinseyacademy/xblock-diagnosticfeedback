@@ -1,4 +1,6 @@
-from . import Range, Category, Question
+from __future__ import absolute_import
+
+from . import Category, Question, Range
 
 
 class MainHelper(object):

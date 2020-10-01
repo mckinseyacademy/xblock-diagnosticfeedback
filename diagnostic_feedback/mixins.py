@@ -1,5 +1,8 @@
-from .config import student_assets, studio_assets
+from __future__ import absolute_import
+
 from xblockutils.resources import ResourceLoader
+
+from .config import student_assets, studio_assets
 
 loader = ResourceLoader(__name__)
 

@@ -1,11 +1,13 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from xblock.fields import String
-from xblockutils.base_test import SeleniumXBlockTest
-from xblockutils.resources import ResourceLoader
+from __future__ import absolute_import
+
 # Studio adds a url_name property to each XBlock but Workbench doesn't.
 # Since we rely on it, we need to mock url_name support so it can be set via XML and
 # accessed like a normal field.
 from diagnostic_feedback.quiz import QuizBlock
+from selenium.webdriver.support.ui import WebDriverWait
+from xblock.fields import String
+from xblockutils.base_test import SeleniumXBlockTest
+from xblockutils.resources import ResourceLoader
 
 QuizBlock.url_name = String()
 

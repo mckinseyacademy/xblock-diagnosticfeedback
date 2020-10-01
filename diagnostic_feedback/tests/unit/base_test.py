@@ -1,11 +1,12 @@
+from __future__ import absolute_import
+
 import unittest
 
+import diagnostic_feedback
 from webob import Request
 from workbench.runtime import WorkbenchRuntime
 from xblock.fields import ScopeIds
-from xblock.runtime import KvsFieldData, DictKeyValueStore
-
-import diagnostic_feedback
+from xblock.runtime import DictKeyValueStore, KvsFieldData
 
 
 class BaseTest(unittest.TestCase):
