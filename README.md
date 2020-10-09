@@ -1,7 +1,7 @@
 Diagnostic Feedback
 --------------------
 
-This repository provides Diagnostic Feedback Authoring XBlock.
+This repository provides Diagnostic Feedback Authoring XBlock. 
 
 This xblock allows the author to create a series of questions which will assess
 and subsequently provide feedback to the student attempting the published quiz.
