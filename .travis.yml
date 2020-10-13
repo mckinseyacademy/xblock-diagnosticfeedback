@@ -22,7 +22,6 @@ script:
   - make quality
   - make test
 
-
 notifications:
   email: false
 
