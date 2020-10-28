@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: public/js/src/student/student_quiz.js:73
+msgid "Start Over"
+msgstr "ابدأ من جديد"
+
+#: public/js/src/student/student_quiz.js:74 public/js/src/studio/quiz.js:295
+msgid "Current Step"
+msgstr "الخطوة الحالية"
+
+#: public/js/src/student/student_quiz.js:75
+msgid "Finish"
+msgstr "إنهاء"
+
+#: public/js/src/student/student_quiz.js:76 public/js/src/studio/quiz.js:297
+msgid "Next"
+msgstr "التالي"
+
+#: public/js/src/student/student_quiz.js:77 public/js/src/studio/quiz.js:298
+msgid "Previous"
+msgstr "السابق"
+
+#: public/js/src/student/student_quiz.js:78 public/js/src/studio/quiz.js:299
+msgid "Loading ..."
+msgstr "جاري التحميل..."
+
+#: public/js/src/student/student_quiz.js:367
+msgid "The report is currently being generated…"
+msgstr "يتم حالياً إنشاء التقرير…"
+
+#: public/js/src/student/student_quiz.js:371
+msgid "Report is successfully generated. Downloading…"
+msgstr "تم إنشاء التقرير بنجاح. يتم الآن التنزيل..."
+
+#: public/js/src/student/student_quiz.js:374
+msgid "Unable to generate report. Please contact your system administrator."
+msgstr "يتعذر إنشاء التقرير. يرجى الاتصال بمسؤول النظام."
+
+#: public/js/src/studio/quiz.js:181
+msgid "Your data has been successfully saved."
+msgstr "تم حفظ بياناتك بنجاح."
+
+#: public/js/src/studio/quiz.js:183
+msgid "However, some answer combinations in \""
+msgstr "ومع ذلك، بعض مجموعات الإجابات في \""
+
+#: public/js/src/studio/quiz.js:186
+msgid "Close"
+msgstr "إغلاق"
+
+#: public/js/src/studio/quiz.js:294
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: public/js/src/studio/quiz.js:296
+msgid "Save"
+msgstr "حفظ"
+
+#: public/js/src/studio/quiz.js:532
+msgid "At least one category is required"
+msgstr "مطلوب فئة واحدة على الأقل"
+
+#: public/js/src/studio/quiz.js:536
+msgid "Are you sure to delete this category?"
+msgstr "هل تريد بالتأكيد حذف هذه الفئة؟"
+
+#: public/js/src/studio/quiz.js:570
+msgid "At least one range is required"
+msgstr "مطلوب نطاق واحد على الأقل"
+
+#: public/js/src/studio/quiz.js:574
+msgid "Are you sure to delete this range?"
+msgstr "هل تريد بالتأكيد حذف هذا النطاق؟"
+
+#: public/js/src/studio/quiz.js:601
+msgid "At least one question is required"
+msgstr "مطلوب سؤال واحد على الأقل"
+
+#: public/js/src/studio/quiz.js:605
+msgid "Are you sure to delete this question?"
+msgstr "هل تريد بالتأكيد حذف هذا السؤال؟"
+
+#: public/js/src/studio/quiz.js:650
+msgid "At least one answer is required"
+msgstr "مطلوب إجابة واحدة على الأقل"
+
+#: public/js/src/studio/quiz.js:654
+msgid "Are you sure to delete this choice?"
+msgstr "هل تريد بالتأكيد حذف هذا الخيار؟"
+
+#: public/js/src/studio/studio_common.js:139
+msgid "Untitled"
+msgstr "بدون عنوان"
+
+#: public/js/src/studio/studio_common.js:369
+msgid "Paragraph"
+msgstr "الفقرة"
+
+#: public/js/src/studio/studio_common.js:370
+msgid "Preformatted"
+msgstr "مهيأ مسبقا"
+
+#: public/js/src/studio/studio_common.js:371
+msgid "Heading 1"
+msgstr "العنوان 1"
+
+#: public/js/src/studio/studio_common.js:372
+msgid "Heading 2"
+msgstr "العنوان 2"
+
+#: public/js/src/studio/studio_common.js:373
+msgid "Heading 3"
+msgstr "العنوان 3"
+
+#: public/js/src/studio/studio_validator.js:37
+msgid "Range Min value must be float"
+msgstr "يجب أن تكون قيمة الحد الأدنى للنطاق معومة"
+
+#: public/js/src/studio/studio_validator.js:40
+msgid "Range Max value must be float"
+msgstr "يجب أن تكون القيمة القصوى للنطاق معومة"
+
+#: public/js/src/studio/studio_validator.js:43
+msgid "Min value must be < Max"
+msgstr "يجب أن تكون قيمة الحد الأدنى أقل من الحد الأقصى"
+
+#: public/js/src/studio/studio_validator.js:72
+msgid "Overlapping ranges found in \""
+msgstr "تم العثور على نطاقات متداخلة في \""

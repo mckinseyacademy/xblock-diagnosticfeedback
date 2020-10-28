@@ -1,8 +1,4 @@
 
-            (function(global){
-                var DiagnosticFeedbackXBlockI18N = {
-                  init: function() {
-                    
 
 (function(globals) {
 
@@ -15,6 +11,44 @@
   /* gettext library */
 
   django.catalog = django.catalog || {};
+  
+  var newcatalog = {
+    "Are you sure to delete this category?": "Czy na pewno chcesz usun\u0105\u0107 t\u0119 kategori\u0119?", 
+    "Are you sure to delete this choice?": "Czy na pewno chcesz usun\u0105\u0107 ten wyb\u00f3r?", 
+    "Are you sure to delete this question?": "Czy na pewno chcesz usun\u0105\u0107 to pytanie?", 
+    "Are you sure to delete this range?": "Czy na pewno chcesz usun\u0105\u0107 ten zakres?", 
+    "At least one answer is required": "Potrzeba przynajmniej 1 odpowiedzi", 
+    "At least one category is required": "Potrzeba przynajmniej 1 kategorii", 
+    "At least one question is required": "Potrzeba przynajmniej 1 pytania", 
+    "At least one range is required": "Potrzeba przynajmniej 1 zakresu", 
+    "Cancel": "Anuluj", 
+    "Close": "Zamknij", 
+    "Current Step": "Obecny krok", 
+    "Finish": "Zako\u0144cz", 
+    "Heading 1": "Nag\u0142\u00f3wek 1", 
+    "Heading 2": "Nag\u0142\u00f3wek 2", 
+    "Heading 3": "Nag\u0142\u00f3wek 3", 
+    "However, some answer combinations in \"": "Jednak niekt\u00f3re kombinacje odpowiedzi w \u201e", 
+    "Loading ...": "Wczytywanie...", 
+    "Min value must be < Max": "Minimalna warto\u015b\u0107 musi by\u0107 mniejsza od maksymalnej warto\u015bci", 
+    "Next": "Nast\u0119pny", 
+    "Overlapping ranges found in \"": "Znaleziono nak\u0142adaj\u0105ce si\u0119 na siebie zakresy w \u201e", 
+    "Paragraph": "Akapit", 
+    "Preformatted": "Wst\u0119pnie sformatowane", 
+    "Previous": "Poprzedni", 
+    "Range Max value must be float": "Maksymalna warto\u015b\u0107 zakresu musi by\u0107 liczb\u0105 zmiennoprzecinkow\u0105", 
+    "Range Min value must be float": "Minimalna warto\u015b\u0107 zakresu musi by\u0107 liczb\u0105 zmiennoprzecinkow\u0105", 
+    "Report is successfully generated. Downloading\u2026": "Raport zosta\u0142 wygenerowany. Pobieranie raportu...", 
+    "Save": "Zapisz", 
+    "Start Over": "Zacznij od pocz\u0105tku", 
+    "The report is currently being generated\u2026": "Generujemy raport...", 
+    "Unable to generate report. Please contact your system administrator.": "Nie uda\u0142o si\u0119 wygenerowa\u0107 raportu. Prosimy skontaktowa\u0107 si\u0119 z administratorem systemu.", 
+    "Untitled": "Bez tytu\u0142u", 
+    "Your data has been successfully saved.": "Twoje dane zosta\u0142y zapisane."
+  };
+  for (var key in newcatalog) {
+    django.catalog[key] = newcatalog[key];
+  }
   
 
   if (!django.jsi18n_initialized) {
@@ -124,10 +158,3 @@
 
 }(this));
 
-
-                  }
-                };
-                DiagnosticFeedbackXBlockI18N.init();
-                global.DiagnosticFeedbackXBlockI18N = DiagnosticFeedbackXBlockI18N;
-            }(this));
-        

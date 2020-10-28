@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: public/js/src/student/student_quiz.js:73
+msgid "Start Over"
+msgstr "Recommencer"
+
+#: public/js/src/student/student_quiz.js:74 public/js/src/studio/quiz.js:295
+msgid "Current Step"
+msgstr "Étape actuelle"
+
+#: public/js/src/student/student_quiz.js:75
+msgid "Finish"
+msgstr "Terminer"
+
+#: public/js/src/student/student_quiz.js:76 public/js/src/studio/quiz.js:297
+msgid "Next"
+msgstr "Suivant"
+
+#: public/js/src/student/student_quiz.js:77 public/js/src/studio/quiz.js:298
+msgid "Previous"
+msgstr "Précédent"
+
+#: public/js/src/student/student_quiz.js:78 public/js/src/studio/quiz.js:299
+msgid "Loading ..."
+msgstr "Chargement..."
+
+#: public/js/src/student/student_quiz.js:367
+msgid "The report is currently being generated…"
+msgstr "Le rapport est en cours de production..."
+
+#: public/js/src/student/student_quiz.js:371
+msgid "Report is successfully generated. Downloading…"
+msgstr "Le rapport est généré avec succès. Téléchargement..."
+
+#: public/js/src/student/student_quiz.js:374
+msgid "Unable to generate report. Please contact your system administrator."
+msgstr "Impossible de générer le rapport. Veuillez contacter votre administrateur de système."
+
+#: public/js/src/studio/quiz.js:181
+msgid "Your data has been successfully saved."
+msgstr "Vos données ont été sauvegardées avec succès."
+
+#: public/js/src/studio/quiz.js:183
+msgid "However, some answer combinations in \""
+msgstr "Toutefois, certaines combinaisons de réponses dans \""
+
+#: public/js/src/studio/quiz.js:186
+msgid "Close"
+msgstr "Fermer"
+
+#: public/js/src/studio/quiz.js:294
+msgid "Cancel"
+msgstr "Annuler"
+
+#: public/js/src/studio/quiz.js:296
+msgid "Save"
+msgstr "Enregistrer"
+
+#: public/js/src/studio/quiz.js:532
+msgid "At least one category is required"
+msgstr "Il faut au moins une catégorie"
+
+#: public/js/src/studio/quiz.js:536
+msgid "Are you sure to delete this category?"
+msgstr "Voulez-vous vraiment supprimer cette catégorie ?"
+
+#: public/js/src/studio/quiz.js:570
+msgid "At least one range is required"
+msgstr "Il faut au moins un intervalle"
+
+#: public/js/src/studio/quiz.js:574
+msgid "Are you sure to delete this range?"
+msgstr "Voulez-vous vraiment supprimer cet intervalle ?"
+
+#: public/js/src/studio/quiz.js:601
+msgid "At least one question is required"
+msgstr "Il faut au moins une question"
+
+#: public/js/src/studio/quiz.js:605
+msgid "Are you sure to delete this question?"
+msgstr "Voulez-vous vraiment supprimer cette question ?"
+
+#: public/js/src/studio/quiz.js:650
+msgid "At least one answer is required"
+msgstr "Il faut au moins une réponse"
+
+#: public/js/src/studio/quiz.js:654
+msgid "Are you sure to delete this choice?"
+msgstr "Voulez-vous vraiment supprimer ce choix ?"
+
+#: public/js/src/studio/studio_common.js:139
+msgid "Untitled"
+msgstr "Sans titre"
+
+#: public/js/src/studio/studio_common.js:369
+msgid "Paragraph"
+msgstr "Paragraphe"
+
+#: public/js/src/studio/studio_common.js:370
+msgid "Preformatted"
+msgstr "Préformaté"
+
+#: public/js/src/studio/studio_common.js:371
+msgid "Heading 1"
+msgstr "Rubrique 1"
+
+#: public/js/src/studio/studio_common.js:372
+msgid "Heading 2"
+msgstr "Rubrique 2"
+
+#: public/js/src/studio/studio_common.js:373
+msgid "Heading 3"
+msgstr "Rubrique 3"
+
+#: public/js/src/studio/studio_validator.js:37
+msgid "Range Min value must be float"
+msgstr "La valeur minimale de l'intervalle doit être flottante"
+
+#: public/js/src/studio/studio_validator.js:40
+msgid "Range Max value must be float"
+msgstr "La valeur maximale de l'intervalle doit être flottante"
+
+#: public/js/src/studio/studio_validator.js:43
+msgid "Min value must be < Max"
+msgstr "Valeur minimale doit être < valeur maximale"
+
+#: public/js/src/studio/studio_validator.js:72
+msgid "Overlapping ranges found in \""
+msgstr "Intervalles de chevauchement trouvés dans \""
