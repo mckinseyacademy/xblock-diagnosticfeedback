@@ -16,6 +16,44 @@
 
   django.catalog = django.catalog || {};
   
+  var newcatalog = {
+    "Are you sure to delete this category?": "Sind Sie sicher, dass Sie diese Kategorie l\u00f6schen wollen?", 
+    "Are you sure to delete this choice?": "Sind Sie sicher, dass Sie diese Auswahl l\u00f6schen wollen?", 
+    "Are you sure to delete this question?": "Sind Sie sicher, dass Sie diese Frage l\u00f6schen wollen?", 
+    "Are you sure to delete this range?": "Sind Sie sicher, dass Sie diesen Bereich l\u00f6schen wollen?", 
+    "At least one answer is required": "Mindestens eine Antwort ist erforderlich", 
+    "At least one category is required": "Mindestens eine Kategorie ist erforderlich", 
+    "At least one question is required": "Mindestens eine Frage ist erforderlich", 
+    "At least one range is required": "Mindestens ein Bereich ist erforderlich", 
+    "Cancel": "Abbrechen", 
+    "Close": "Schlie\u00dfen", 
+    "Current Step": "Derzeitiger Schritt", 
+    "Finish": "Ende", 
+    "Heading 1": "\u00dcberschrift 1", 
+    "Heading 2": "\u00dcberschrift 2", 
+    "Heading 3": "\u00dcberschrift 3", 
+    "However, some answer combinations in \"": "Jedoch einige Antwortkombinationen in \"", 
+    "Loading ...": "L\u00e4dt...", 
+    "Min value must be < Max": "Mindestwert muss < H\u00f6chstwert sein", 
+    "Next": "Weiter", 
+    "Overlapping ranges found in \"": "\u00dcberlappende Bereiche gefunden in \"", 
+    "Paragraph": "Absatz", 
+    "Preformatted": "Vorformatiert", 
+    "Previous": "Zur\u00fcck", 
+    "Range Max value must be float": "H\u00f6chstwert des Bereichs muss schweben", 
+    "Range Min value must be float": "Mindestwert des Bereichs muss schweben", 
+    "Report is successfully generated. Downloading\u2026": "Der Report wurde erfolgreich zusammengestellt. L\u00e4dt herunter...", 
+    "Save": "Speichern", 
+    "Start Over": "Noch einmal von vorne anfangen", 
+    "The report is currently being generated\u2026": "Der Report wird gerade zusammengestellt\u2026", 
+    "Unable to generate report. Please contact your system administrator.": "Report kann nicht zusammengestellt werden. Bitte wenden Sie sich an Ihren Systemadministrator.", 
+    "Untitled": "Ohne Titel", 
+    "Your data has been successfully saved.": "Ihre Daten wurden erfolgreich gespeichert."
+  };
+  for (var key in newcatalog) {
+    django.catalog[key] = newcatalog[key];
+  }
+  
 
   if (!django.jsi18n_initialized) {
     django.gettext = function(msgid) {

@@ -1,5 +1,7 @@
+import pkg_resources
 from __future__ import absolute_import
 
+from django import utils
 from xblockutils.resources import ResourceLoader
 
 from .config import student_assets, studio_assets
@@ -25,6 +27,28 @@ class ResourceMixin(object):
     def sort_resources_by_order(self, lst):
         return sorted(lst, key=lambda x: x[1])
 
+    @staticmethod
+    def resource_string(path):
+        """Handy helper for getting resources."""
+        data = pkg_resources.resource_string(__name__, path)
+        return data.decode("utf8")
+
+    def get_translation_content(self):
+        """
+        Returns JS content containing translations for user's language.
+        """
+        try:
+            return self.resource_string('public/js/translations/{lang}/textjs.js'.format(
+                lang=utils.translation.to_locale(utils.translation.get_language()),
+            ))
+        except IOError:
+            return self.resource_string('public/js/translations/en/textjs.js')
+
+    @property
+    def i18n_service(self):
+        """ Obtains translation service """
+        return self.runtime.service(self, "i18n")
+
     def add_templates(self, fragment, context, view):
         # add templates in html fragment for studio/student view
 
@@ -33,7 +57,9 @@ class ResourceMixin(object):
                                                  )
         for template_obj in templates:
             template = template_obj[0]
-            fragment.add_content(loader.render_template(template, context))
+            fragment.add_content(loader.render_django_template(template, context, i18n_service=self.i18n_service))
+
+        fragment.add_javascript(self.get_translation_content())
 
     def add_css(self, fragment, view):
         # add css in fragment for studio/student view

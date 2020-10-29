@@ -16,6 +16,44 @@
 
   django.catalog = django.catalog || {};
   
+  var newcatalog = {
+    "Are you sure to delete this category?": "Tem certeza que deseja excluir essa categoria?", 
+    "Are you sure to delete this choice?": "Tem certeza que deseja excluir essa reposta?", 
+    "Are you sure to delete this question?": "Tem certeza que deseja excluir essa pergunta?", 
+    "Are you sure to delete this range?": "Tem certeza que deseja excluir esse intervalo?", 
+    "At least one answer is required": "\u00c9 necess\u00e1rio pelo menos uma reposta", 
+    "At least one category is required": "\u00c9 necess\u00e1ria pelo menos uma categoria", 
+    "At least one question is required": "\u00c9 necess\u00e1rio pelo menos uma pergunta", 
+    "At least one range is required": "\u00c9 necess\u00e1rio pelo menos um intervalo", 
+    "Cancel": "Cancelar", 
+    "Close": "Fechar", 
+    "Current Step": "Etapa atual", 
+    "Finish": "Terminar", 
+    "Heading 1": "Cabe\u00e7alho 1", 
+    "Heading 2": "Cabe\u00e7alho 2", 
+    "Heading 3": "Cabe\u00e7alho 3", 
+    "However, some answer combinations in \"": "No entanto, algumas combina\u00e7\u00f5es de resposta em \"", 
+    "Loading ...": "Carregando...", 
+    "Min value must be < Max": "O valor m\u00ednimo deve ser menor do que o m\u00e1ximo", 
+    "Next": "Pr\u00f3ximo", 
+    "Overlapping ranges found in \"": "Intervalos sobrepostos encontrados em \"", 
+    "Paragraph": "Par\u00e1grafo", 
+    "Preformatted": "Pr\u00e9-formatado", 
+    "Previous": "Anterior", 
+    "Range Max value must be float": "O valor m\u00e1ximo do intervalo deve ser flutuante", 
+    "Range Min value must be float": "O valor m\u00ednimo do intervalo deve ser flutuante", 
+    "Report is successfully generated. Downloading\u2026": "O relat\u00f3rio foi gerado com sucesso. Fazendo o download\u2026", 
+    "Save": "Salvar", 
+    "Start Over": "Come\u00e7ar de novo", 
+    "The report is currently being generated\u2026": "O relat\u00f3rio est\u00e1 sendo gerado...", 
+    "Unable to generate report. Please contact your system administrator.": "N\u00e3o foi poss\u00edvel gerar o relat\u00f3rio. Entre em contato com o administrador do sistema.", 
+    "Untitled": "Sem t\u00edtulo", 
+    "Your data has been successfully saved.": "Seus dados foram salvos com sucesso."
+  };
+  for (var key in newcatalog) {
+    django.catalog[key] = newcatalog[key];
+  }
+  
 
   if (!django.jsi18n_initialized) {
     django.gettext = function(msgid) {

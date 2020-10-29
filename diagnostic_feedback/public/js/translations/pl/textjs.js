@@ -1,4 +1,8 @@
 
+            (function(global){
+                var DiagnosticFeedbackXBlockI18N = {
+                  init: function() {
+                    
 
 (function(globals) {
 
@@ -158,3 +162,10 @@
 
 }(this));
 
+
+                  }
+                };
+                DiagnosticFeedbackXBlockI18N.init();
+                global.DiagnosticFeedbackXBlockI18N = DiagnosticFeedbackXBlockI18N;
+            }(this));
+        
