@@ -8,14 +8,21 @@ function StudentQuiz(runtime, element, initData) {
     var studentQuiz = this;
     studentQuiz.startOver = false;
     studentQuiz.movingToStep = false;
-
-    if (typeof gettext === "undefined") {
-        window.gettext = function gettext_stub(string) {
-            return string;
-        };
-        window.ngettext = function ngettext_stub(strA, strB, n) {
-            return n === 1 ? strA : strB;
-        };
+    var gettext;
+    var ngettext;
+    if ('DiagnosticFeedbackXBlockI18N' in window) {
+        // Use Chat's local translations
+        gettext = window.DiagnosticFeedbackXBlockI18N.gettext;
+        ngettext = window.DiagnosticFeedbackXBlockI18N.ngettext;
+    } else if ('gettext' in window) {
+        // Use edxapp's global translations
+        gettext = window.gettext;
+        ngettext = window.ngettext;
+    }
+    if (typeof gettext == "undefined") {
+        // No translations -- used by test environment
+        gettext = function(string) { return string; };
+        ngettext = function(strA, strB, n) { return n == 1 ? strA : strB; };
     }
 
     $(function ($) {
