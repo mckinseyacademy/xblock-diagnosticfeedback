@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: quiz.py:32
+msgid "BuzzFeed-style"
+msgstr "Styl BuzzFeed"
+
+#: quiz.py:34
+msgid "Diagnostic-style"
+msgstr "Styl diagnostyczny"
+
+#: quiz.py:35
+msgid "Default Group"
+msgstr "Grupa domyślna"
+
+#: quiz.py:38
+msgid "Diagnostic Feedback"
+msgstr "Informacja diagnostyczna"
+
+#: quiz.py:39
+msgid "This name appears in the horizontal navigation at the top of the page."
+msgstr "Nazwa ta pojawi się w pasku horyzontalnym nawigacji u góry strony."
+
+#: quiz.py:47
+msgid "Title of quiz"
+msgstr "Tytuł testu"
+
+#: quiz.py:53
+msgid "Description of quiz"
+msgstr "Opis testu"
+
+#: quiz.py:58
+msgid "This will hold list of question with respective choices"
+msgstr "Tu znajdzie się lista pytań z odpowiedziami"
+
+#: quiz.py:64
+msgid "This will hold user provided answers of questions"
+msgstr "Tu znajdą się odpowiedzi na pytania podane przez użytkownika"
+
+#: quiz.py:71
+msgid "Type of quiz"
+msgstr "Typ testu"
+
+#: quiz.py:77 quiz.py:92 quiz.py:98
+msgid "List of results"
+msgstr "Lista rezultatów"
+
+#: quiz.py:83
+msgid "Calculated feedback of each user"
+msgstr "Obliczona ocena każdego użytkownika"
+
+#: quiz.py:104
+msgid "To control which question should be shown to student"
+msgstr "Aby kontrolować, jakie pytania zostaną pokazane uczniowi"
+
+#: quiz.py:108
+msgid "Weight"
+msgstr "Waga"
+
+#: quiz.py:109
+msgid "Defines the maximum total grade of this question."
+msgstr "Definiuje maksymalną ogólną ocenę/punktację dla tego pytania"
+
+#: quiz.py:118
+msgid "Has the student completed this quiz"
+msgstr "Czy student ukończył ten test"
+
+#: quiz.py:337
+msgid "missing step number"
+msgstr "Brakuje numeru kroku"
+
+#: quiz.py:401
+msgid "Your response is saved"
+msgstr "Twoja odpowiedź została zapisana"
+
+#: quiz.py:417
+msgid "student data cleared"
+msgstr "wyczyszczono dane studenta"
+
+#: quiz.py:434
+msgid "Group added successfully."
+msgstr "Dodano grupę."
+
+#: quiz.py:438
+msgid "Group already exist."
+msgstr "Taka grupa już istnieje."
+
+#: templates/student/quiz.html:3
+msgid "Download Data"
+msgstr "Pobierz dane"
+
+#: templates/student/quiz.html:13
+msgid "Question"
+msgstr "Pytanie"
+
+#: templates/student/quiz.html:60
+msgid "Please add questions."
+msgstr "Dodaj pytania."
+
+#: templates/studio/wizard.html:5
+msgid "Loading Wizard, Please wait"
+msgstr "Wczytywanie kreatora, proszę czekaj"
+
+#: templates/studio/wizard.html:12
+msgid "Basic Info"
+msgstr "Podstawowe info"
+
+#: templates/studio/wizard.html:18
+msgid "Quiz Title"
+msgstr "Tytuł testu"
+
+#: templates/studio/wizard.html:26 templates/studio/wizard.html:37
+msgid "Quiz Type"
+msgstr "Typ testu"
+
+#: templates/studio/wizard.html:28
+msgid "Select Type"
+msgstr "Wybierz typ"
+
+#: templates/studio/wizard.html:42
+msgid "Type cannot be changed once it is set."
+msgstr "Wybrano typu nie można zmienić"
+
+#: templates/studio/wizard.html:46
+msgid "Description"
+msgstr "Opis"
+
+#: templates/studio/wizard.html:59
+msgid "Categories"
+msgstr "Kategorie"
+
+#: templates/studio/wizard.html:60
+msgid "Drag a collapsed category to prioritize for tie-breaking."
+msgstr "Przeciągnij zwiniętą kategorię, aby nadać priorytet w celu rozstrzygnięcia."
+
+#: templates/studio/wizard.html:66
+msgid "Add Category"
+msgstr "Dodaj kategorię"
+
+#: templates/studio/wizard.html:69
+msgid "Ranges"
+msgstr "Zakresy"
+
+#: templates/studio/wizard.html:70
+msgid "Drag a collapsed range to prioritize for tie-breaking."
+msgstr "Przeciągnij zwinięty zakres, aby nadać priorytet w celu rozstrzygnięcia."
+
+#: templates/studio/wizard.html:76
+msgid "Add Range"
+msgstr "Dodaj zakres"
+
+#: templates/studio/wizard.html:83
+msgid "Questions"
+msgstr "Pytania"
+
+#: templates/studio/wizard.html:92
+msgid "Add Question"
+msgstr "Dodaj pytanie"
+
+#: validators/category.py:23
+msgid "At least one category required"
+msgstr "Wymagana jest przynajmniej 1 kategoria"
+
+#: validators/category.py:33
+msgid "ID is required"
+msgstr "ID jest wymagane"
+
+#: validators/category.py:36 validators/range.py:59
+msgid "Name is required"
+msgstr "Nazwa jest wymagana"
+
+#: validators/category.py:39 validators/range.py:68
+msgid "Group is required"
+msgstr "Grupa jest wymagana"
+
+#: validators/category.py:42 validators/range.py:71
+msgid "Order is required"
+msgstr "Zamówienie jest wymagany"
+
+#: validators/question.py:33
+msgid "Choices list is missing"
+msgstr "Brak listy wyborów"
+
+#: validators/question.py:42
+msgid "Name required"
+msgstr "Wymagana nazwa"
+
+#: validators/question.py:46
+msgid "Category required"
+msgstr "Wymagana kategoria"
+
+#: validators/question.py:50
+msgid "Invalid category_id found"
+msgstr "Znaleziono niewłaściwe ID kategorii"
+
+#: validators/question.py:54
+msgid "Choice value required"
+msgstr "Wymagana wartość wyboru"
+
+#: validators/question.py:73
+msgid "At least one question required"
+msgstr "Potrzeba przynajmniej 1 pytania"
+
+#: validators/question.py:87 validators/question.py:92
+#: validators/question.py:97 validators/question.py:101
+#: validators/question.py:105 validators/question.py:109
+#: validators/question.py:117
+msgid "question"
+msgstr "pytanie"
+
+#: validators/question.py:87
+msgid "id required"
+msgstr "wymagane id"
+
+#: validators/question.py:92
+msgid "title required"
+msgstr "wymagany tytuł"
+
+#: validators/question.py:97
+msgid "text required"
+msgstr "wymagany tekst"
+
+#: validators/question.py:101
+msgid "order required"
+msgstr "wymagane zamówienie"
+
+#: validators/question.py:105
+msgid "group required"
+msgstr "wymagana grupa"
+
+#: validators/question.py:110
+msgid "invalid group found"
+msgstr "znaleziono niewłaściwą grupę"
+
+#: validators/question.py:118
+msgid "having invalid choices."
+msgstr "posiada niewłaściwe wybory."
+
+#: validators/quiz.py:38
+msgid "Title is required"
+msgstr "Nazwa jest wymagana"
+
+#: validators/quiz.py:41
+msgid "Description is required"
+msgstr "Opis jest wymagany"
+
+#: validators/quiz.py:44
+msgid "Type is invalid"
+msgstr "Typ jest nieprawidłowy"
+
+#: validators/range.py:62
+msgid "Min/Max values required"
+msgstr "Wymagane są wartości minimalne/maksymalne"
+
+#: validators/range.py:65
+msgid "Min > Max"
+msgstr "Minimalna większa od maksymalnej"
+
+#: validators/range.py:90
+msgid "Overlapping ranges in '{}'"
+msgstr "Znaleziono nakładające się na siebie zakresy w „{}”"
+
+#: validators/range.py:118
+msgid "At least one range required"
+msgstr "Potrzeba przynajmniej 1 zakresu"
+
+#: validators/student_choice.py:25
+msgid "Question id is required"
+msgstr "ID pytania jest wymagane"
+
+#: validators/student_choice.py:28
+msgid "Student Choice is required"
+msgstr "Wybór ucznia jest wymagany"
+
+#: validators/student_choice.py:31
+msgid "Current step is required"
+msgstr "Obecny krok jest wymagany"

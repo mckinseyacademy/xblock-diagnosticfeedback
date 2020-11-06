@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: public/js/src/student/student_quiz.js:73
+msgid "Start Over"
+msgstr "重新开始"
+
+#: public/js/src/student/student_quiz.js:74 public/js/src/studio/quiz.js:295
+msgid "Current Step"
+msgstr "当前步骤"
+
+#: public/js/src/student/student_quiz.js:75
+msgid "Finish"
+msgstr "完成"
+
+#: public/js/src/student/student_quiz.js:76 public/js/src/studio/quiz.js:297
+msgid "Next"
+msgstr "下一步"
+
+#: public/js/src/student/student_quiz.js:77 public/js/src/studio/quiz.js:298
+msgid "Previous"
+msgstr "上一步"
+
+#: public/js/src/student/student_quiz.js:78 public/js/src/studio/quiz.js:299
+msgid "Loading ..."
+msgstr "正在加载..."
+
+#: public/js/src/student/student_quiz.js:367
+msgid "The report is currently being generated…"
+msgstr "目前正在生成报告…"
+
+#: public/js/src/student/student_quiz.js:371
+msgid "Report is successfully generated. Downloading…"
+msgstr "报告已成功生成。正在下载..."
+
+#: public/js/src/student/student_quiz.js:374
+msgid "Unable to generate report. Please contact your system administrator."
+msgstr "无法生成报告。请联系系统管理员。"
+
+#: public/js/src/studio/quiz.js:181
+msgid "Your data has been successfully saved."
+msgstr "您的数据已成功保存。"
+
+#: public/js/src/studio/quiz.js:183
+msgid "However, some answer combinations in \""
+msgstr "但是，以下其中的一些答案组合"
+
+#: public/js/src/studio/quiz.js:186
+msgid "Close"
+msgstr "关闭"
+
+#: public/js/src/studio/quiz.js:294
+msgid "Cancel"
+msgstr "取消"
+
+#: public/js/src/studio/quiz.js:296
+msgid "Save"
+msgstr "保存"
+
+#: public/js/src/studio/quiz.js:532
+msgid "At least one category is required"
+msgstr "至少需要一个类别"
+
+#: public/js/src/studio/quiz.js:536
+msgid "Are you sure to delete this category?"
+msgstr "是否确定删除此类别？"
+
+#: public/js/src/studio/quiz.js:570
+msgid "At least one range is required"
+msgstr "至少需要一个范围"
+
+#: public/js/src/studio/quiz.js:574
+msgid "Are you sure to delete this range?"
+msgstr "是否确定删除此范围？"
+
+#: public/js/src/studio/quiz.js:601
+msgid "At least one question is required"
+msgstr "至少需要一个问题"
+
+#: public/js/src/studio/quiz.js:605
+msgid "Are you sure to delete this question?"
+msgstr "是否确定删除此问题？"
+
+#: public/js/src/studio/quiz.js:650
+msgid "At least one answer is required"
+msgstr "至少需要一个答案"
+
+#: public/js/src/studio/quiz.js:654
+msgid "Are you sure to delete this choice?"
+msgstr "是否确定删除此选项？"
+
+#: public/js/src/studio/studio_common.js:139
+msgid "Untitled"
+msgstr "无标题"
+
+#: public/js/src/studio/studio_common.js:369
+msgid "Paragraph"
+msgstr "段落"
+
+#: public/js/src/studio/studio_common.js:370
+msgid "Preformatted"
+msgstr "已预格式化"
+
+#: public/js/src/studio/studio_common.js:371
+msgid "Heading 1"
+msgstr "标题 1"
+
+#: public/js/src/studio/studio_common.js:372
+msgid "Heading 2"
+msgstr "标题 2"
+
+#: public/js/src/studio/studio_common.js:373
+msgid "Heading 3"
+msgstr "标题 3"
+
+#: public/js/src/studio/studio_validator.js:37
+msgid "Range Min value must be float"
+msgstr "范围最小值必须是浮动的"
+
+#: public/js/src/studio/studio_validator.js:40
+msgid "Range Max value must be float"
+msgstr "范围最大值必须是浮动的"
+
+#: public/js/src/studio/studio_validator.js:43
+msgid "Min value must be < Max"
+msgstr "最小值必须小于最大值"
+
+#: public/js/src/studio/studio_validator.js:72
+msgid "Overlapping ranges found in \""
+msgstr "以下项中存在重叠范围"

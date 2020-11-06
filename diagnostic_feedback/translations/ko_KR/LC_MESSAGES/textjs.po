@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: public/js/src/student/student_quiz.js:73
+msgid "Start Over"
+msgstr "다시 시작"
+
+#: public/js/src/student/student_quiz.js:74 public/js/src/studio/quiz.js:295
+msgid "Current Step"
+msgstr "현재 단계"
+
+#: public/js/src/student/student_quiz.js:75
+msgid "Finish"
+msgstr "완료"
+
+#: public/js/src/student/student_quiz.js:76 public/js/src/studio/quiz.js:297
+msgid "Next"
+msgstr "다음"
+
+#: public/js/src/student/student_quiz.js:77 public/js/src/studio/quiz.js:298
+msgid "Previous"
+msgstr "이전"
+
+#: public/js/src/student/student_quiz.js:78 public/js/src/studio/quiz.js:299
+msgid "Loading ..."
+msgstr "로드 중..."
+
+#: public/js/src/student/student_quiz.js:367
+msgid "The report is currently being generated…"
+msgstr "현재 보고서를 생성하는 중..."
+
+#: public/js/src/student/student_quiz.js:371
+msgid "Report is successfully generated. Downloading…"
+msgstr "보고서가 성공적으로 생성되었습니다. 다운로드 중…"
+
+#: public/js/src/student/student_quiz.js:374
+msgid "Unable to generate report. Please contact your system administrator."
+msgstr "보고서를 생성할 수 없습니다. 시스템 관리자에게 문의하십시오."
+
+#: public/js/src/studio/quiz.js:181
+msgid "Your data has been successfully saved."
+msgstr "데이터가 성공적으로 저장되었습니다."
+
+#: public/js/src/studio/quiz.js:183
+msgid "However, some answer combinations in \""
+msgstr "그러나, 다음의 일부 답변 조합: \""
+
+#: public/js/src/studio/quiz.js:186
+msgid "Close"
+msgstr "닫기"
+
+#: public/js/src/studio/quiz.js:294
+msgid "Cancel"
+msgstr "취소"
+
+#: public/js/src/studio/quiz.js:296
+msgid "Save"
+msgstr "저장"
+
+#: public/js/src/studio/quiz.js:532
+msgid "At least one category is required"
+msgstr "하나 이상의 카테고리가 필요합니다."
+
+#: public/js/src/studio/quiz.js:536
+msgid "Are you sure to delete this category?"
+msgstr "이 카테고리를 삭제하시겠습니까?"
+
+#: public/js/src/studio/quiz.js:570
+msgid "At least one range is required"
+msgstr "하나 이상의 범위가 필요합니다."
+
+#: public/js/src/studio/quiz.js:574
+msgid "Are you sure to delete this range?"
+msgstr "이 범위를 삭제하시겠습니까?"
+
+#: public/js/src/studio/quiz.js:601
+msgid "At least one question is required"
+msgstr "하나 이상의 질문이 필요합니다."
+
+#: public/js/src/studio/quiz.js:605
+msgid "Are you sure to delete this question?"
+msgstr "이 질문을 삭제하시겠습니까?"
+
+#: public/js/src/studio/quiz.js:650
+msgid "At least one answer is required"
+msgstr "하나 이상의 답변이 필요합니다."
+
+#: public/js/src/studio/quiz.js:654
+msgid "Are you sure to delete this choice?"
+msgstr "이 선택지를 삭제하시겠습니까?"
+
+#: public/js/src/studio/studio_common.js:139
+msgid "Untitled"
+msgstr "제목 없음"
+
+#: public/js/src/studio/studio_common.js:369
+msgid "Paragraph"
+msgstr "단락"
+
+#: public/js/src/studio/studio_common.js:370
+msgid "Preformatted"
+msgstr "사전 지정된 형식"
+
+#: public/js/src/studio/studio_common.js:371
+msgid "Heading 1"
+msgstr "제목 1"
+
+#: public/js/src/studio/studio_common.js:372
+msgid "Heading 2"
+msgstr "제목 2"
+
+#: public/js/src/studio/studio_common.js:373
+msgid "Heading 3"
+msgstr "제목 3"
+
+#: public/js/src/studio/studio_validator.js:37
+msgid "Range Min value must be float"
+msgstr "범위 최소값은 부동 소수점이어야 합니다."
+
+#: public/js/src/studio/studio_validator.js:40
+msgid "Range Max value must be float"
+msgstr "범위 최대값은 부동 소수점이어야 합니다."
+
+#: public/js/src/studio/studio_validator.js:43
+msgid "Min value must be < Max"
+msgstr "최소값은 최대값보다 작아야 합니다."
+
+#: public/js/src/studio/studio_validator.js:72
+msgid "Overlapping ranges found in \""
+msgstr "다음에서 중복되는 범위 발견: \""

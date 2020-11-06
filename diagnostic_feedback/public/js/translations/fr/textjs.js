@@ -16,6 +16,44 @@
 
   django.catalog = django.catalog || {};
   
+  var newcatalog = {
+    "Are you sure to delete this category?": "Voulez-vous vraiment supprimer cette cat\u00e9gorie ?", 
+    "Are you sure to delete this choice?": "Voulez-vous vraiment supprimer ce choix ?", 
+    "Are you sure to delete this question?": "Voulez-vous vraiment supprimer cette question ?", 
+    "Are you sure to delete this range?": "Voulez-vous vraiment supprimer cet intervalle ?", 
+    "At least one answer is required": "Il faut au moins une r\u00e9ponse", 
+    "At least one category is required": "Il faut au moins une cat\u00e9gorie", 
+    "At least one question is required": "Il faut au moins une question", 
+    "At least one range is required": "Il faut au moins un intervalle", 
+    "Cancel": "Annuler", 
+    "Close": "Fermer", 
+    "Current Step": "\u00c9tape actuelle", 
+    "Finish": "Terminer", 
+    "Heading 1": "Rubrique 1", 
+    "Heading 2": "Rubrique 2", 
+    "Heading 3": "Rubrique 3", 
+    "However, some answer combinations in \"": "Toutefois, certaines combinaisons de r\u00e9ponses dans \"", 
+    "Loading ...": "Chargement...", 
+    "Min value must be < Max": "Valeur minimale doit \u00eatre < valeur maximale", 
+    "Next": "Suivant", 
+    "Overlapping ranges found in \"": "Intervalles de chevauchement trouv\u00e9s dans \"", 
+    "Paragraph": "Paragraphe", 
+    "Preformatted": "Pr\u00e9format\u00e9", 
+    "Previous": "Pr\u00e9c\u00e9dent", 
+    "Range Max value must be float": "La valeur maximale de l'intervalle doit \u00eatre flottante", 
+    "Range Min value must be float": "La valeur minimale de l'intervalle doit \u00eatre flottante", 
+    "Report is successfully generated. Downloading\u2026": "Le rapport est g\u00e9n\u00e9r\u00e9 avec succ\u00e8s. T\u00e9l\u00e9chargement...", 
+    "Save": "Enregistrer", 
+    "Start Over": "Recommencer", 
+    "The report is currently being generated\u2026": "Le rapport est en cours de production...", 
+    "Unable to generate report. Please contact your system administrator.": "Impossible de g\u00e9n\u00e9rer le rapport. Veuillez contacter votre administrateur de syst\u00e8me.", 
+    "Untitled": "Sans titre", 
+    "Your data has been successfully saved.": "Vos donn\u00e9es ont \u00e9t\u00e9 sauvegard\u00e9es avec succ\u00e8s."
+  };
+  for (var key in newcatalog) {
+    django.catalog[key] = newcatalog[key];
+  }
+  
 
   if (!django.jsi18n_initialized) {
     django.gettext = function(msgid) {

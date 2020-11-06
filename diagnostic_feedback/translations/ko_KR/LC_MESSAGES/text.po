@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: quiz.py:32
+msgid "BuzzFeed-style"
+msgstr "BuzzFeed-style"
+
+#: quiz.py:34
+msgid "Diagnostic-style"
+msgstr "Diagnostic-style"
+
+#: quiz.py:35
+msgid "Default Group"
+msgstr "기본 그룹"
+
+#: quiz.py:38
+msgid "Diagnostic Feedback"
+msgstr "진단 피드백"
+
+#: quiz.py:39
+msgid "This name appears in the horizontal navigation at the top of the page."
+msgstr "이 이름은 페이지 상단의 가로 탐색 영역에 표시됩니다."
+
+#: quiz.py:47
+msgid "Title of quiz"
+msgstr "퀴즈 제목"
+
+#: quiz.py:53
+msgid "Description of quiz"
+msgstr "퀴즈 설명"
+
+#: quiz.py:58
+msgid "This will hold list of question with respective choices"
+msgstr "각각의 선택지와 함께 질문 목록을 보관합니다."
+
+#: quiz.py:64
+msgid "This will hold user provided answers of questions"
+msgstr "질문에 대해 사용자가 제공한 답변을 보관합니다."
+
+#: quiz.py:71
+msgid "Type of quiz"
+msgstr "퀴즈 유형"
+
+#: quiz.py:77 quiz.py:92 quiz.py:98
+msgid "List of results"
+msgstr "결과 목록"
+
+#: quiz.py:83
+msgid "Calculated feedback of each user"
+msgstr "각 사용자에 대해 계산된 피드백"
+
+#: quiz.py:104
+msgid "To control which question should be shown to student"
+msgstr "학생에게 표시할 질문을 제어하는 방법"
+
+#: quiz.py:108
+msgid "Weight"
+msgstr "중요도"
+
+#: quiz.py:109
+msgid "Defines the maximum total grade of this question."
+msgstr "이 질문의 최대 총 등급을 정의합니다."
+
+#: quiz.py:118
+msgid "Has the student completed this quiz"
+msgstr "수강자가 이 퀴즈를 완료했습니까"
+
+#: quiz.py:337
+msgid "missing step number"
+msgstr "단계 번호 누락"
+
+#: quiz.py:401
+msgid "Your response is saved"
+msgstr "응답이 저장되었습니다."
+
+#: quiz.py:417
+msgid "student data cleared"
+msgstr "수강자 데이터가 삭제되었습니다."
+
+#: quiz.py:434
+msgid "Group added successfully."
+msgstr "그룹이 성공적으로 추가되었습니다."
+
+#: quiz.py:438
+msgid "Group already exist."
+msgstr "그룹이 이미 존재합니다."
+
+#: templates/student/quiz.html:3
+msgid "Download Data"
+msgstr "데이터 다운로드"
+
+#: templates/student/quiz.html:13
+msgid "Question"
+msgstr "질문"
+
+#: templates/student/quiz.html:60
+msgid "Please add questions."
+msgstr "질문을 추가하십시오."
+
+#: templates/studio/wizard.html:5
+msgid "Loading Wizard, Please wait"
+msgstr "마법사를 로드하는 중입니다. 잠시 기다려 주십시오."
+
+#: templates/studio/wizard.html:12
+msgid "Basic Info"
+msgstr "기본 정보"
+
+#: templates/studio/wizard.html:18
+msgid "Quiz Title"
+msgstr "퀴즈 제목"
+
+#: templates/studio/wizard.html:26 templates/studio/wizard.html:37
+msgid "Quiz Type"
+msgstr "퀴즈 유형"
+
+#: templates/studio/wizard.html:28
+msgid "Select Type"
+msgstr "유형 선택"
+
+#: templates/studio/wizard.html:42
+msgid "Type cannot be changed once it is set."
+msgstr "설정된 유형은 변경할 수 없습니다."
+
+#: templates/studio/wizard.html:46
+msgid "Description"
+msgstr "설명"
+
+#: templates/studio/wizard.html:59
+msgid "Categories"
+msgstr "카테고리"
+
+#: templates/studio/wizard.html:60
+msgid "Drag a collapsed category to prioritize for tie-breaking."
+msgstr "접힌 카테고리를 드래그하여 타이 브레이킹 우선순위를 지정합니다."
+
+#: templates/studio/wizard.html:66
+msgid "Add Category"
+msgstr "카테고리 추가"
+
+#: templates/studio/wizard.html:69
+msgid "Ranges"
+msgstr "범위"
+
+#: templates/studio/wizard.html:70
+msgid "Drag a collapsed range to prioritize for tie-breaking."
+msgstr "접힌 범위를 드래그하여 타이 브레이킹 우선순위를 지정합니다."
+
+#: templates/studio/wizard.html:76
+msgid "Add Range"
+msgstr "범위 추가"
+
+#: templates/studio/wizard.html:83
+msgid "Questions"
+msgstr "질문"
+
+#: templates/studio/wizard.html:92
+msgid "Add Question"
+msgstr "질문 추가"
+
+#: validators/category.py:23
+msgid "At least one category required"
+msgstr "하나 이상의 카테고리가 필요합니다."
+
+#: validators/category.py:33
+msgid "ID is required"
+msgstr "ID는 필수 항목입니다."
+
+#: validators/category.py:36 validators/range.py:59
+msgid "Name is required"
+msgstr "이름은 필수 항목입니다."
+
+#: validators/category.py:39 validators/range.py:68
+msgid "Group is required"
+msgstr "그룹은 필수 항목입니다."
+
+#: validators/category.py:42 validators/range.py:71
+msgid "Order is required"
+msgstr "순서는 필수 항목입니다."
+
+#: validators/question.py:33
+msgid "Choices list is missing"
+msgstr "선택지 목록이 누락되었습니다."
+
+#: validators/question.py:42
+msgid "Name required"
+msgstr "이름은 필수입니다."
+
+#: validators/question.py:46
+msgid "Category required"
+msgstr "카테고리는 필수입니다."
+
+#: validators/question.py:50
+msgid "Invalid category_id found"
+msgstr "잘못된 category_id가 발견되었습니다."
+
+#: validators/question.py:54
+msgid "Choice value required"
+msgstr "선택지 값은 필수입니다."
+
+#: validators/question.py:73
+msgid "At least one question required"
+msgstr "하나 이상의 질문이 필요합니다."
+
+#: validators/question.py:87 validators/question.py:92
+#: validators/question.py:97 validators/question.py:101
+#: validators/question.py:105 validators/question.py:109
+#: validators/question.py:117
+msgid "question"
+msgstr "질문"
+
+#: validators/question.py:87
+msgid "id required"
+msgstr "ID 필수"
+
+#: validators/question.py:92
+msgid "title required"
+msgstr "제목 필수"
+
+#: validators/question.py:97
+msgid "text required"
+msgstr "텍스트 필수"
+
+#: validators/question.py:101
+msgid "order required"
+msgstr "순서 필수"
+
+#: validators/question.py:105
+msgid "group required"
+msgstr "그룹 필수"
+
+#: validators/question.py:110
+msgid "invalid group found"
+msgstr "잘못된 그룹이 발견되었습니다."
+
+#: validators/question.py:118
+msgid "having invalid choices."
+msgstr "잘못된 선택지가 있습니다."
+
+#: validators/quiz.py:38
+msgid "Title is required"
+msgstr "제목은 필수 항목입니다."
+
+#: validators/quiz.py:41
+msgid "Description is required"
+msgstr "설명은 필수 항목입니다."
+
+#: validators/quiz.py:44
+msgid "Type is invalid"
+msgstr "유형이 잘못되었습니다."
+
+#: validators/range.py:62
+msgid "Min/Max values required"
+msgstr "최소값/최대값 필수"
+
+#: validators/range.py:65
+msgid "Min > Max"
+msgstr "최소값>최대값"
+
+#: validators/range.py:90
+msgid "Overlapping ranges in '{}'"
+msgstr "'{}’에 중복된 범위가 있습니다."
+
+#: validators/range.py:118
+msgid "At least one range required"
+msgstr "하나 이상의 범위가 필요합니다."
+
+#: validators/student_choice.py:25
+msgid "Question id is required"
+msgstr "질문 ID는 필수 항목입니다."
+
+#: validators/student_choice.py:28
+msgid "Student Choice is required"
+msgstr "수강자 선택지는 필수 항목입니다."
+
+#: validators/student_choice.py:31
+msgid "Current step is required"
+msgstr "현재 단계는 필수 항목입니다."

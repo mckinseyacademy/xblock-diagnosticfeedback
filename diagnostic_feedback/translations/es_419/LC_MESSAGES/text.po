@@ -1,0 +1,293 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-28 19:15+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: quiz.py:32
+msgid "BuzzFeed-style"
+msgstr "Estilo: BuzzFeed"
+
+#: quiz.py:34
+msgid "Diagnostic-style"
+msgstr "Estilo: Diagnóstico"
+
+#: quiz.py:35
+msgid "Default Group"
+msgstr "Grupo predeterminado"
+
+#: quiz.py:38
+msgid "Diagnostic Feedback"
+msgstr "Comentario de diagnóstico"
+
+#: quiz.py:39
+msgid "This name appears in the horizontal navigation at the top of the page."
+msgstr "Este nombre aparece en la barra de navegación horizontal, en la parte superior de la-página."
+
+#: quiz.py:47
+msgid "Title of quiz"
+msgstr "Titulo del cuestionario"
+
+#: quiz.py:53
+msgid "Description of quiz"
+msgstr "Descripción del cuestionario"
+
+#: quiz.py:58
+msgid "This will hold list of question with respective choices"
+msgstr "Esta acción suspende la lista de preguntas y sus respectivas opciones"
+
+#: quiz.py:64
+msgid "This will hold user provided answers of questions"
+msgstr "Esta acción suspende las respuestas a las preguntas brindadas por el usuario"
+
+#: quiz.py:71
+msgid "Type of quiz"
+msgstr "Tipo de cuestionario"
+
+#: quiz.py:77 quiz.py:92 quiz.py:98
+msgid "List of results"
+msgstr "Lista de resultados"
+
+#: quiz.py:83
+msgid "Calculated feedback of each user"
+msgstr "Comentario calculado de cada usuario"
+
+#: quiz.py:104
+msgid "To control which question should be shown to student"
+msgstr "Se emplea para controlar qué pregunta se muestra al estudiante"
+
+#: quiz.py:108
+msgid "Weight"
+msgstr "Peso"
+
+#: quiz.py:109
+msgid "Defines the maximum total grade of this question."
+msgstr "Define la calificación total máxima de esta pregunta."
+
+#: quiz.py:118
+msgid "Has the student completed this quiz"
+msgstr "Ha respondido el estudiante este cuestionario"
+
+#: quiz.py:337
+msgid "missing step number"
+msgstr "falta el número de paso"
+
+#: quiz.py:401
+msgid "Your response is saved"
+msgstr "Su respuesta se guardó"
+
+#: quiz.py:417
+msgid "student data cleared"
+msgstr "se borraron los datos del estudiante"
+
+#: quiz.py:434
+msgid "Group added successfully."
+msgstr "El grupo se agregó con éxito."
+
+#: quiz.py:438
+msgid "Group already exist."
+msgstr "El grupo ya existe"
+
+#: templates/student/quiz.html:3
+msgid "Download Data"
+msgstr "Descargar datos"
+
+#: templates/student/quiz.html:13
+msgid "Question"
+msgstr "Pregunta"
+
+#: templates/student/quiz.html:60
+msgid "Please add questions."
+msgstr "Agregue preguntas."
+
+#: templates/studio/wizard.html:5
+msgid "Loading Wizard, Please wait"
+msgstr "El asistente se está cargando. Gracias por esperar"
+
+#: templates/studio/wizard.html:12
+msgid "Basic Info"
+msgstr "Información básica"
+
+#: templates/studio/wizard.html:18
+msgid "Quiz Title"
+msgstr "Título del cuestionario"
+
+#: templates/studio/wizard.html:26 templates/studio/wizard.html:37
+msgid "Quiz Type"
+msgstr "Tipo de cuestionario"
+
+#: templates/studio/wizard.html:28
+msgid "Select Type"
+msgstr "Seleccionar Tipo"
+
+#: templates/studio/wizard.html:42
+msgid "Type cannot be changed once it is set."
+msgstr "Una vez que se selecciona, no se puede cambiar el Tipo."
+
+#: templates/studio/wizard.html:46
+msgid "Description"
+msgstr "Descripción"
+
+#: templates/studio/wizard.html:59
+msgid "Categories"
+msgstr "Categorías"
+
+#: templates/studio/wizard.html:60
+msgid "Drag a collapsed category to prioritize for tie-breaking."
+msgstr "Arrastre una categoría contraída para asignar un orden de prioridad en caso de empate."
+
+#: templates/studio/wizard.html:66
+msgid "Add Category"
+msgstr "Agregar Categoría"
+
+#: templates/studio/wizard.html:69
+msgid "Ranges"
+msgstr "Rangos"
+
+#: templates/studio/wizard.html:70
+msgid "Drag a collapsed range to prioritize for tie-breaking."
+msgstr "Arrastre un rango contraído para asignar un orden de prioridad en caso de empate."
+
+#: templates/studio/wizard.html:76
+msgid "Add Range"
+msgstr "Agregar Rango"
+
+#: templates/studio/wizard.html:83
+msgid "Questions"
+msgstr "Preguntas"
+
+#: templates/studio/wizard.html:92
+msgid "Add Question"
+msgstr "Agregar Pregunta"
+
+#: validators/category.py:23
+msgid "At least one category required"
+msgstr "Se debe incluir al menos una categoría"
+
+#: validators/category.py:33
+msgid "ID is required"
+msgstr "Complete el campo obligatorio Id."
+
+#: validators/category.py:36 validators/range.py:59
+msgid "Name is required"
+msgstr "Complete el campo obligatorio Nombre"
+
+#: validators/category.py:39 validators/range.py:68
+msgid "Group is required"
+msgstr "Complete el campo obligatorio Grupo"
+
+#: validators/category.py:42 validators/range.py:71
+msgid "Order is required"
+msgstr "Complete el campo obligatorio Pedido"
+
+#: validators/question.py:33
+msgid "Choices list is missing"
+msgstr "Falta la lista de opciones"
+
+#: validators/question.py:42
+msgid "Name required"
+msgstr "El campo Nombre es obligatorio"
+
+#: validators/question.py:46
+msgid "Category required"
+msgstr "El campo Categoría es obligatorio"
+
+#: validators/question.py:50
+msgid "Invalid category_id found"
+msgstr "Se encontró que el campo category_id no es válido"
+
+#: validators/question.py:54
+msgid "Choice value required"
+msgstr "Complete el campo obligatorio Puntaje de la opción"
+
+#: validators/question.py:73
+msgid "At least one question required"
+msgstr "Se debe incluir al menos una pregunta"
+
+#: validators/question.py:87 validators/question.py:92
+#: validators/question.py:97 validators/question.py:101
+#: validators/question.py:105 validators/question.py:109
+#: validators/question.py:117
+msgid "question"
+msgstr "pregunta"
+
+#: validators/question.py:87
+msgid "id required"
+msgstr "El campo id es obligatorio"
+
+#: validators/question.py:92
+msgid "title required"
+msgstr "El campo titulo es obligatorio"
+
+#: validators/question.py:97
+msgid "text required"
+msgstr "El campo texto es obligatorio"
+
+#: validators/question.py:101
+msgid "order required"
+msgstr "El campo pedido es obligatorio"
+
+#: validators/question.py:105
+msgid "group required"
+msgstr "El campo grupo es obligatorio"
+
+#: validators/question.py:110
+msgid "invalid group found"
+msgstr "se encontró un grupo no válido"
+
+#: validators/question.py:118
+msgid "having invalid choices."
+msgstr "incluye opciones no válidas."
+
+#: validators/quiz.py:38
+msgid "Title is required"
+msgstr "Complete el campo obligatorio Título"
+
+#: validators/quiz.py:41
+msgid "Description is required"
+msgstr "Complete el campo obligatorio Descripción"
+
+#: validators/quiz.py:44
+msgid "Type is invalid"
+msgstr "El campo Tipo no es válido"
+
+#: validators/range.py:62
+msgid "Min/Max values required"
+msgstr "El campo Valores mín./máx. es obligatorio"
+
+#: validators/range.py:65
+msgid "Min > Max"
+msgstr "Mím. > Máx."
+
+#: validators/range.py:90
+msgid "Overlapping ranges in '{}'"
+msgstr "Se encontró una superposición de rangos es '{}'"
+
+#: validators/range.py:118
+msgid "At least one range required"
+msgstr "Se debe incluir al menos un rango"
+
+#: validators/student_choice.py:25
+msgid "Question id is required"
+msgstr "Complete el campo obligatorio Id. de pregunta"
+
+#: validators/student_choice.py:28
+msgid "Student Choice is required"
+msgstr "Complete el campo obligatorio Opción del estudiante"
+
+#: validators/student_choice.py:31
+msgid "Current step is required"
+msgstr "Complete el campo obligatorio Paso actual"
