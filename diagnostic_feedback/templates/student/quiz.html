@@ -1,4 +1,6 @@
 {% load i18n %}
+{% load l10n %}
+
 <div class="diagnostic-feedback diagnostic-feedback-student">
     {% if user_is_staff %} <a href="#" class="export_data">{% trans "Download Data" %}</a><span class="export_progress"></span> {% endif %}
     {% if questions %}
@@ -29,10 +31,10 @@
                         {% else %}
                         <input type="radio" id="{{block_id}}_{{ question.id }}_choice_{{ forloop.counter }}"
                                name="{{block_id}}_choice_name_{{ question.id }}"
-                               {% if question.student_choice == choice.value %}
+                               {% if question.student_choice == choice.value|unlocalize %}
                                checked="checked"
                                {% endif %}
-                               value="{{ choice.value }}"/>
+                               value="{{ choice.value|unlocalize }}"/>
                         {% endif %}
                         <label for="{{block_id}}_{{question.id}}_choice_{{ forloop.counter }}">{{choice.name|safe }}</label> <br>
                         {% endfor %}
